@@ -1,0 +1,20 @@
+<%= form_for @course  do |s| %>
+<div class="course_creating">
+  <%= s.label :title %>
+  <%= s.text_field :title %>
+</div>
+<div class="course_creating">
+  <%= s.label :description%>
+  <%= s.text_field :description%>
+</div>
+<div class="course_creating">
+  <%= s.label :syllabus%>
+  <%= s.text_field :syllabus %>
+</div>
+<div class="course_creating">
+  <%= s.hidden_field :constructor_id%>
+</div>
+<div class="course_creating">
+  <%= s.submit "Create Course" %>
+</div>
+<% end %>

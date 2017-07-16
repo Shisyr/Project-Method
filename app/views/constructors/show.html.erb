@@ -1,0 +1,7 @@
+<%= link_to "Создать курс", new_course_path(id: @constructor) %>
+</p>
+<% @courses.each do |c| %>
+      <%= c.title %> </p>
+      <%= c.description %></p>
+      <%= c.syllabus %></p>
+<% end %>
